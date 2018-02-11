@@ -23,8 +23,6 @@ onAddItem(){
 		const ingName = this.nameInputRef.nativeElement.value;
 		const ingAmount = this.amountInputRef.nativeElement.value;
 		const newingredient = new Ingredient(ingName, ingAmount);
-		this.slService.addIngredient(newingredient);
-		
+		this.slService.addIngredient(newingredient);	
 	}
-
 }
