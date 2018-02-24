@@ -50,6 +50,16 @@ onSubmit(form: NgForm){
 		form.reset();
 	}
 	
+onClear(){
+	this.slForm.reset();
+	this.editMode=false;
+}	
+	
+onDelete(){
+	this.slService.deleteIngredient(this.editItemIndex);
+	this.onClear();
+}	
+	
 	
 ngOnDestroy(){
 		this.subscription.unsubscribe();
