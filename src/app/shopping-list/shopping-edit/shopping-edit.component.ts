@@ -60,7 +60,6 @@ onDelete(){
 	this.onClear();
 }	
 	
-	
 ngOnDestroy(){
 		this.subscription.unsubscribe();
 	}
